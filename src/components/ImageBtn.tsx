@@ -9,7 +9,6 @@ interface Props {
 
 const ImageBtn = ({ style, children, onPress }: Props) => {
 
-
 	return (
 		<View style={[styles.profileContainer, style]}>
 			<Pressable onPress={onPress}>
