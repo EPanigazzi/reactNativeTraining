@@ -1,5 +1,5 @@
-export default {
-	Categories: [
+export default 
+     [
 		{
 			id: 1,
 			name: "Celulares",
@@ -24,5 +24,4 @@ export default {
 			id: 6,
 			name: "Varios",
 		},
-	],
-};
+	];

@@ -2,9 +2,9 @@ import { View, StyleSheet, Pressable, Image } from 'react-native'
 import React from 'react';
 
 interface Props {
-	style: any;
+	style?: any;
     children: any,
-	onPress: () => void;
+	onPress?: () => void;
 }
 
 const ImageBtn = ({ style, children, onPress }: Props) => {
