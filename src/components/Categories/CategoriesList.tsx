@@ -2,10 +2,9 @@ import React from "react";
 import {
 	SafeAreaView,
 	FlatList,
-	StyleSheet,
 } from "react-native";
-import { Categories } from "../interfaces/reqData";
-import CategoriesMock from "../mocks/CategoriesMock";
+import { Categories } from "../../interfaces/reqData";
+import CategoriesMock from "../../mocks/CategoriesMock";
 import CategoryItem from "./CategoryItem";
 
 
@@ -26,16 +25,16 @@ const CategoriesList = () => {
 					flexDirection: "row",
 					justifyContent: "space-between",
 					alignItems: "center",
-                    padding: 15,
+                    paddingLeft: 5,
+					paddingRight: 5,
+					paddingTop: 10,
 				}}
 				horizontal={true}
+				showsHorizontalScrollIndicator={false}
 			/>
 		</SafeAreaView>
 	);
 };
 
-const styles = StyleSheet.create({
-
-});
 
 export default CategoriesList;

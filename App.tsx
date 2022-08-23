@@ -1,6 +1,5 @@
 import { StyleSheet} from "react-native";
-import HomeScreen from "./src/screens/HomeScreen";
-import AccountScreen from "./src/screens/AccountScreen";
+import AccountScreen from "./src/screens/Account/AccountScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import "react-native-gesture-handler";
