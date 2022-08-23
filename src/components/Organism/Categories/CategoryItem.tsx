@@ -4,7 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
-import ImageBtn from "../ImageBtn";
+import ImageBtn from "../../ImageBtn";
 
 interface Props {
 	name: string;

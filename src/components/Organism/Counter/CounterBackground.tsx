@@ -1,14 +1,16 @@
 import { View, Text, Image, StyleSheet } from "react-native";
-import React from "react";
+import React, { useState } from "react";
 
 const CounterBackground = () => {
+	const [counter, setCounter] = useState(0);
+
 	return (
 		<View style={styles.counterContainer}>
 			<Image
-				source={require("../../assets/public/counter-background.png")}
+				source={require("../../../../assets/public/counter-background.png")}
 				style={styles.img}
 			/>
-			<Text style={styles.counter}>000</Text>
+			<Text style={styles.counter}>{counter}</Text>
 		</View>
 	);
 };

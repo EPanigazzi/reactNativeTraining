@@ -3,8 +3,8 @@ import {
 	SafeAreaView,
 	FlatList,
 } from "react-native";
-import { Categories } from "../../interfaces/reqData";
-import CategoriesMock from "../../mocks/CategoriesMock";
+import { Categories } from "../../../interfaces/reqData";
+import CategoriesMock from "../../../mocks/CategoriesMock";
 import CategoryItem from "./CategoryItem";
 
 

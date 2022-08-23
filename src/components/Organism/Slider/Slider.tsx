@@ -5,8 +5,8 @@ const Slider = () => {
   return (
 		<View>
 			<Image
-				source={require("../../assets/public/background-slider.png")}
-                style={styles.image}
+				source={require("../../../../assets/public/background-slider.png")}
+				style={styles.image}
 			/>
 		</View>
   );

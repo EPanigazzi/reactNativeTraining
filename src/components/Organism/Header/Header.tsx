@@ -1,8 +1,8 @@
 import { View, StyleSheet, Image } from "react-native";
 import React from "react";
-import ImageBtn from "./ImageBtn";
-import InputSearch from "./InputSearch";
 import { useNavigation } from "@react-navigation/native";
+import ImageBtn from "../../ImageBtn";
+import InputSearch from "../../InputSearch";
 
 const Header = () => {
 	const navigation = useNavigation();
@@ -15,9 +15,12 @@ const Header = () => {
 	return (
 		<View style={styles.rootContainer}>
 			<View style={styles.headerContainer}>
-				<ImageBtn style={styles.logoContainer} onPress={() => console.log("Press Logo")}>
+				<ImageBtn
+					style={styles.logoContainer}
+					onPress={() => console.log("Press Logo")}
+				>
 					<Image
-						source={require("../../assets/public/globant-market-img.png")}
+						source={require("../../../../assets/public/globant-market-img.png")}
 					/>
 				</ImageBtn>
 				<InputSearch />
@@ -26,7 +29,7 @@ const Header = () => {
 					onPress={pressProfileHandler}
 				>
 					<Image
-						source={require("../../assets/public/profile.png")}
+						source={require("../../../../assets/public/profile.png")}
 					/>
 				</ImageBtn>
 				<ImageBtn
@@ -34,7 +37,7 @@ const Header = () => {
 					onPress={() => console.log("Message Pressed!")}
 				>
 					<Image
-						source={require("../../assets/public/messages.png")}
+						source={require("../../../../assets/public/messages.png")}
 					/>
 				</ImageBtn>
 			</View>

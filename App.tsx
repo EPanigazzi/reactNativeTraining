@@ -1,4 +1,3 @@
-import { StyleSheet} from "react-native";
 import AccountScreen from "./src/screens/Account/AccountScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
@@ -28,9 +27,3 @@ export default function App() {
 	);
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: "#eda3a3",
-	},
-});
