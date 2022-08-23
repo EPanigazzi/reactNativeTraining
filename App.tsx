@@ -8,7 +8,7 @@ const Drawer = createDrawerNavigator();
 
 export default function App() {
 	return (
-		<NavigationContainer>
+		<NavigationContainer >
 			<Drawer.Navigator
 				screenOptions={{
 					headerShown: false,
