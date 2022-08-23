@@ -11,15 +11,15 @@ import Slider from "../../components/Organism/Slider/Slider";
 
 const HomeScreen = () => {
 	return (
-		<View style={{backgroundColor: 'white', flex:1}}>
-			<Header />
-			<CounterBackground />
-			<Slider />
-			<CategoriesList />
-			<ScrollView>
+		<View style={{ backgroundColor: "white", flex: 1 }}>
+			<ScrollView nestedScrollEnabled={true} >
+				<Header />
+				<CounterBackground />
+				<Slider />
+				<CategoriesList />
 				<ProductList />
+				<NewListProduct />
 			</ScrollView>
-			<NewListProduct />
 		</View>
 	);
 };

@@ -7,7 +7,7 @@ import ListTitle from '../ListTitle/ListTitle';
 
 const ProductList = () => {
   return (
-		<View>
+		<View >
 			<ListTitle hasBtn={true}>
 				<Text>Productos de tu site</Text>
 			</ListTitle>

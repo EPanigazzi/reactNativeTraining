@@ -9,7 +9,6 @@ interface Props {
 	item: Content;
 }
 
-
 const NewListProduct = () => {
 	const renderItem = ({ item }: Props) => (
 		<NewListProductItem productData={item} />
@@ -32,6 +31,7 @@ const NewListProduct = () => {
 						paddingLeft: 5,
 						paddingRight: 5,
 						paddingTop: 10,
+						paddingBottom: 15,
 					}}
 					horizontal={true}
 					showsHorizontalScrollIndicator={false}

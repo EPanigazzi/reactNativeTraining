@@ -7,15 +7,20 @@ interface Props {
 	item: {
 		item: Content;
 	};
+	isLiked: boolean;	
+	// onWhishListHandler: (id:number) => void;
 }
 
-const WishlistIconText = ({ item }: Props) => {
-	const [isLiked, setIsLiked] = useState(false);
+const WishlistIconText = ({ item,isLiked, }: Props) => {
 
-    const { price } = item.item;
+	const { price } = item.item;
+
+	function onWhishListHandler() {
+		console.log(item.item.id);
+	}
 
 	return (
-		<Pressable onPress={(e) => console.log(e)}>
+		<Pressable onPress={onWhishListHandler}>
 			<View style={styles.iconPriceContainer}>
 				{isLiked ? (
 					<AntDesign name="heart" size={24} color="black" />
@@ -28,7 +33,7 @@ const WishlistIconText = ({ item }: Props) => {
 					/>
 				)}
 
-				<Text style={styles.priceText}>{price}</Text>
+				<Text style={styles.priceText}>$ {price}</Text>
 			</View>
 		</Pressable>
 	);
